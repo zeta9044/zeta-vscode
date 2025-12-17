@@ -6,6 +6,7 @@ Zeta는 VS Code에서 Claude Code 스타일의 터미널 모드를 제공하는 
 - **AI 터미널 세션**: AI 상호작용 전용 VS Code 터미널 탭을 엽니다.
 - **명령 실행기**: 자유 형식의 지시문을 외부 AI 엔드포인트로 보내고 응답을 터미널에 스트리밍합니다.
 - **엔드포인트·모델 설정**: VS Code 설정에서 API 기본 URL, API 키, 모델 이름을 지정합니다.
+- **Diff UX 지향**: AI가 제안한 변경을 Diff 프리뷰로 보여주고 사용자가 Apply/Reject/Regenerate를 선택하는 흐름을 목표로 합니다.
 
 ## 시작하기
 1. 의존성 설치
@@ -28,7 +29,7 @@ Zeta는 VS Code에서 Claude Code 스타일의 터미널 모드를 제공하는 
 ## 개발 메모
 - 명령 정의는 `package.json`, 구현은 `src/extension.ts`에 있습니다.
 - 현재는 설정된 API의 `POST /instructions`로 요청을 보냅니다. 백엔드 계약이 확정되면 페이로드 형식을 조정하세요.
+- Claude Code 스타일 Diff UX 원칙과 터미널 모드 고려사항은 `docs/diff-ux.md`에 정리되어 있습니다.
 
 ## 라이선스
 이 프로젝트는 GNU General Public License v3.0을 따릅니다. 자세한 내용은 [LICENSE](LICENSE)를 참고하세요.
-
