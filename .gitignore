@@ -1,0 +1,9 @@
+node_modules
+.vscode
+.vscode-test
+coverage
+*.vsix
+dist
+npm-debug.log*
+*.tgz
+.DS_Store

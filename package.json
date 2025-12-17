@@ -1,0 +1,65 @@
+{
+  "name": "zeta-vscode",
+  "displayName": "Zeta VS Code",
+  "description": "Claude Code-style terminal mode for VS Code using an external AI API.",
+  "version": "0.1.0",
+  "publisher": "zeta",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:zeta-vscode.openTerminal",
+    "onCommand:zeta-vscode.runInstruction"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "zeta-vscode.openTerminal",
+        "title": "Zeta: Open AI Terminal Session"
+      },
+      {
+        "command": "zeta-vscode.runInstruction",
+        "title": "Zeta: Send Instruction to AI"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Zeta",
+      "properties": {
+        "zeta.apiBaseUrl": {
+          "type": "string",
+          "default": "https://api.example.com",
+          "description": "Base URL for the external AI API used by Zeta."
+        },
+        "zeta.apiKey": {
+          "type": "string",
+          "description": "API key for authenticating with the external AI API.",
+          "markdownDescription": "`zeta.apiKey` — set in VS Code settings or via Secret Storage."
+        },
+        "zeta.model": {
+          "type": "string",
+          "default": "claude-code",
+          "description": "Model identifier for the external AI API."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p .",
+    "lint": "echo 'Add linter here'",
+    "test": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/vscode": "^1.92.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  }
+}
