@@ -4,7 +4,6 @@
   "description": "Claude Code-style terminal mode for VS Code using an external AI API.",
   "version": "0.1.0",
   "publisher": "zeta",
-  "license": "GPL-3.0-only",
   "engines": {
     "vscode": "^1.92.0"
   },

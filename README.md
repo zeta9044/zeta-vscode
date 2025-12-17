@@ -31,3 +31,4 @@ Zeta는 VS Code에서 Claude Code 스타일의 터미널 모드를 제공하는 
 
 ## 라이선스
 이 프로젝트는 GNU General Public License v3.0을 따릅니다. 자세한 내용은 [LICENSE](LICENSE)를 참고하세요.
+
