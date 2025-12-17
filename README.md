@@ -30,4 +30,5 @@ Zeta는 VS Code에서 Claude Code 스타일의 터미널 모드를 제공하는 
 - 현재는 설정된 API의 `POST /instructions`로 요청을 보냅니다. 백엔드 계약이 확정되면 페이로드 형식을 조정하세요.
 
 ## 라이선스
-이 프로젝트는 MIT License를 따릅니다. 자세한 내용은 [LICENSE](LICENSE)를 참고하세요.
+이 프로젝트는 GNU General Public License v3.0을 따릅니다. 자세한 내용은 [LICENSE](LICENSE)를 참고하세요.
+
